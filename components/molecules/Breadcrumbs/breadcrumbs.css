@@ -1,0 +1,10 @@
+.crumb-list {
+  display: flex;
+  list-style-type: none;
+
+  li:not(:first-child)::before {
+    margin: 0 0.5rem;
+    
+    content: "/";
+  }
+}

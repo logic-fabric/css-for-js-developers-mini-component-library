@@ -1,0 +1,19 @@
+li {
+  --neutral-900: #333;
+
+  --font-text: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.crumb {
+  color: var(--neutral-900);
+  font-family: var(--font-text);
+}
+
+.crumb-link {
+  color: var(--neutral-900);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
