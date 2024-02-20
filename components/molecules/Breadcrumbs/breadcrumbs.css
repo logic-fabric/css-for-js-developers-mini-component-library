@@ -1,10 +1,14 @@
+ol {
+  --neutral-900: #333;
+
+  --font-text: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 .crumb-list {
   display: flex;
-  list-style-type: none;
 
-  li:not(:first-child)::before {
-    margin: 0 0.5rem;
-    
-    content: ">";
-  }
+  color: var(--neutral-900);
+  font-family: var(--font-text);
+
+  list-style-type: none;
 }
