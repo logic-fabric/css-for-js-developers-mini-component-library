@@ -9,7 +9,11 @@ li {
   font-family: var(--font-text);
 }
 
-.crumb-link {
+.crumb--current-page {
+  font-weight: 700;
+}
+
+.crumb--link {
   color: var(--neutral-900);
   text-decoration: none;
 

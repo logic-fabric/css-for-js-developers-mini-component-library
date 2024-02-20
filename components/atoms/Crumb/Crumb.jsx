@@ -5,11 +5,11 @@ import "./crumb.css";
 
 export function Crumb({ name, url, isLastCrumb, ...props }) {
   return (
-    <li className="crumb" {...props}>
+    <li {...props}>
       {isLastCrumb ? (
-        name
+        <span className="crumb crumb--current-page">{name}</span>
       ) : (
-        <a className="crumb-link" href={url}>
+        <a className="crumb crumb--link" href={url}>
           {name}
         </a>
       )}

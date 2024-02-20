@@ -11,8 +11,8 @@ export function Breadcrumbs({ crumbs = [], ...props }) {
   }
 
   return (
-    <nav {...props}>
-      <ul className="crumb-list">
+    <nav aria-label="Breadcrumb" {...props}>
+      <ol className="crumb-list">
         {crumbs.map((crumb, index) => {
           return (
             <Crumb
@@ -22,7 +22,7 @@ export function Breadcrumbs({ crumbs = [], ...props }) {
             />
           );
         })}
-      </ul>
+      </ol>
     </nav>
   );
 }

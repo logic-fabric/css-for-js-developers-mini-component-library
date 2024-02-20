@@ -5,6 +5,6 @@
   li:not(:first-child)::before {
     margin: 0 0.5rem;
     
-    content: "/";
+    content: ">";
   }
 }
