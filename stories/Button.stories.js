@@ -7,34 +7,10 @@ export default {
     layout: "centered",
   },
   tags: ["autodocs"],
-  argTypes: {
-    backgroundColor: { control: "color" },
-  },
 };
 
-export const Primary = {
-  args: {
-    primary: true,
-    label: "Button",
-  },
-};
-
-export const SmallSecondary = {
+export const Fill = {
   args: {
     label: "Button",
-    size: "small",
-  },
-};
-
-export const MediumSecondary = {
-  args: {
-    label: "Button",
-  },
-};
-
-export const LargeSecondary = {
-  args: {
-    label: "Button",
-    size: "large",
   },
 };

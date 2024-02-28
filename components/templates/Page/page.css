@@ -1,5 +1,5 @@
 main {
-  --primary: #1ea7fd;
+  --primary-500: #3333ff;
 
   --success-100: #e7fdd8;
   --success-500: #4d912e;
@@ -32,7 +32,7 @@ main {
 }
 
 .main-content a {
-  color: var(--primary);
+  color: var(--primary-500);
   font-weight: 700;
   text-decoration: none;
 }
@@ -76,5 +76,5 @@ main {
 }
 
 .main-content .tip-wrapper svg path {
-  fill: var(--primary);
+  fill: var(--primary-500);
 }

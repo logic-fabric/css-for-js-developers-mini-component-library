@@ -3,19 +3,10 @@ import PropTypes from "prop-types";
 
 import "./button.css";
 
-export function Button({
-  label,
-  primary = false,
-  size = "medium",
-  backgroundColor = null,
-  ...props
-}) {
-  const mode = primary ? "btn--primary" : "btn--secondary";
-
+export function Button({ label, type = "fill", size = "medium", ...props }) {
   return (
     <button
-      className={["btn", `btn--${size}`, mode].join(" ")}
-      style={backgroundColor && { backgroundColor }}
+      className={["btn", `btn--${type}`, `btn--${size}`].join(" ")}
       type="button"
       {...props}
     >
@@ -26,8 +17,7 @@ export function Button({
 
 Button.propTypes = {
   label: PropTypes.string.isRequired,
-  primary: PropTypes.bool,
+  type: PropTypes.oneOf(["fill", "outline", "ghost"]),
   size: PropTypes.oneOf(["small", "medium", "large"]),
-  backgroundColor: PropTypes.string,
   onClick: PropTypes.func,
 };
