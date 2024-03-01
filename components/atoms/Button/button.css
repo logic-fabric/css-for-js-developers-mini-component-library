@@ -2,7 +2,7 @@ button {
   --primary-500: #3333ff;
   --primary-400: #5260ff;
 
-  --neutral-900: #333;
+  --neutral-900: #334;
   --neutral-500: #73738c;
   --neutral-100: #f1f2fe;
 
@@ -60,7 +60,7 @@ button {
 
   &:hover {
     color: var(--neutral-900);
-    
+
     background: var(--ghost-neutral);
   }
 }
@@ -75,7 +75,7 @@ button {
 .btn--medium {
   padding: 16px 24px;
 
-  font-size: 1.1rem;
+  font-size: calc((18 / 16) * 1rem);
   font-weight: 500;
   line-height: 1.3;
 }
@@ -83,6 +83,6 @@ button {
 .btn--large {
   padding: 20px 36px;
 
-  font-size: 1.3rem;
+  font-size: calc((21 / 16) * 1rem);
   line-height: 1.5;
 }
