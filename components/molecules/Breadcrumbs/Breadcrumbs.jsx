@@ -5,13 +5,13 @@ import { Crumb } from "../../atoms/Crumb/Crumb";
 
 import "./breadcrumbs.css";
 
-export function Breadcrumbs({ crumbs = [], ...props }) {
+export function Breadcrumbs({ crumbs = [], ...delegated }) {
   if (crumbs.length === 0) {
     return null;
   }
 
   return (
-    <nav aria-label="Breadcrumb" {...props}>
+    <nav aria-label="Breadcrumb" {...delegated}>
       <ol className="crumb-list">
         {crumbs.map((crumb, index) => {
           return (

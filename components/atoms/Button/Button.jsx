@@ -3,12 +3,12 @@ import PropTypes from "prop-types";
 
 import "./button.css";
 
-export function Button({ label, type = "fill", size = "medium", ...props }) {
+export function Button({ label, type = "fill", size = "medium", ...delegated }) {
   return (
     <button
       className={["btn", `btn--${type}`, `btn--${size}`].join(" ")}
       type="button"
-      {...props}
+      {...delegated}
     >
       {label}
     </button>

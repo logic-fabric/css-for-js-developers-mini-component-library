@@ -3,9 +3,9 @@ import PropTypes from "prop-types";
 
 import "./crumb.css";
 
-export function Crumb({ name, url, isLastCrumb, ...props }) {
+export function Crumb({ name, url, isLastCrumb, ...delegated }) {
   return (
-    <li {...props}>
+    <li {...delegated}>
       {isLastCrumb ? (
         <span className="crumb crumb--current-page">{name}</span>
       ) : (
