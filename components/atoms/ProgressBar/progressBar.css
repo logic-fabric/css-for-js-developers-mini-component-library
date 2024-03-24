@@ -1,0 +1,26 @@
+.progress-bar {
+  --primary-500: #3333ff;
+  --neutral-500: #73738c;
+  --neutral-400: #b3b3cc;
+  --neutral-200: #e9e9f2;
+
+  width: 100%;
+  min-width: 240px;
+  padding: var(--padding);
+  border-radius: var(--outer-radius);
+  box-shadow: inset 0px 2px 4px var(--neutral-400);
+
+  background: var(--neutral-200);
+}
+
+.progress-wrapper {
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress {
+  width: var(--width);
+  height: var(--height);
+
+  background: var(--primary-500);
+}
