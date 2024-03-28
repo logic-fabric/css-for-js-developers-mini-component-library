@@ -1,0 +1,12 @@
+.icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--size);
+  height: var(--size);
+
+  & > svg {
+    display: inline-block;
+    stroke-width: var(--stroke-width);
+  }
+}
